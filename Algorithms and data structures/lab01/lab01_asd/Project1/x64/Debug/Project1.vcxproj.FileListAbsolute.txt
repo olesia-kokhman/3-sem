@@ -1,0 +1,8 @@
+C:\university\3 sem\АСД\Project1\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\university\3 sem\АСД\Project1\Project1\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+C:\university\3 sem\АСД\Project1\Project1\x64\Debug\Project1.MyForm.resources
+C:\university\3 sem\АСД\Project1\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
+C:\university\git\3-sem\Algorithms and data structures\lab01\lab01_asd\Project1\x64\Debug\Project1.vcxproj.AssemblyReference.cache
+C:\university\git\3-sem\Algorithms and data structures\lab01\lab01_asd\Project1\x64\Debug\Project1.vcxproj.SuggestedBindingRedirects.cache
+C:\university\git\3-sem\Algorithms and data structures\lab01\lab01_asd\Project1\x64\Debug\Project1.MyForm.resources
+C:\university\git\3-sem\Algorithms and data structures\lab01\lab01_asd\Project1\x64\Debug\Project1.vcxproj.GenerateResource.cache
