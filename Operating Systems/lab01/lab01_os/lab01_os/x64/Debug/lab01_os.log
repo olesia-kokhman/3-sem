@@ -1,7 +1,7 @@
 ﻿  main.cpp
-C:\university\3 sem\ОС\1 лабораторна\lab01_os\lab01_os\main.cpp(68,35): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab01\lab01_os\lab01_os\main.cpp(68,35): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
           with
           [
               _Ty=float
           ]
-  lab01_os.vcxproj -> C:\university\3 sem\ОС\1 лабораторна\lab01_os\x64\Debug\lab01_os.exe
+  lab01_os.vcxproj -> C:\university\git\3-sem\Operating Systems\lab01\lab01_os\x64\Debug\lab01_os.exe
