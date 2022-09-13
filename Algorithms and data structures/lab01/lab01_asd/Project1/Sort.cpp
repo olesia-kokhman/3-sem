@@ -66,6 +66,7 @@ void Sort::isOrdered() {
 	for (int i = first; i + 1 <= last; i++) {
 		if (array[i] > array[i + 1]) {
 			isChecked = false;
+			return;
 		}
 	}
 	isChecked = true;

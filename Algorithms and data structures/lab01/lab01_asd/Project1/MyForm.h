@@ -331,7 +331,7 @@ namespace Project1 {
 		size = System::Convert::ToInt16(textBox1->Text);
 	}
 private: System::Void buttonClick(System::Object^ sender, System::EventArgs^ e) {
-	System::Windows::Forms::Button^ button = (Button^)sender;
+	//System::Windows::Forms::Button^ button = (Button^)sender;
 	Sort* sort = new Sort(size);
 	sort->randomNumbers();
 	textBox10 << sort;
