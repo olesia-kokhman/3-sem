@@ -1,0 +1,12 @@
+C:\university\ООП\lab07\Project\Project\x64\Debug\Project.vcxproj.AssemblyReference.cache
+C:\university\ООП\lab07\Project\Project\x64\Debug\Project.vcxproj.SuggestedBindingRedirects.cache
+C:\university\ООП\lab07\Project\Project\x64\Debug\Project.MyForm.resources
+C:\university\ООП\lab07\Project\Project\x64\Debug\Project.vcxproj.GenerateResource.cache
+C:\university\1 year\ООП\lab07\Project\Project\x64\Debug\Project.vcxproj.AssemblyReference.cache
+C:\university\1 year\ООП\lab07\Project\Project\x64\Debug\Project.vcxproj.SuggestedBindingRedirects.cache
+C:\university\1 year\ООП\lab07\Project\Project\x64\Debug\Project.MyForm.resources
+C:\university\1 year\ООП\lab07\Project\Project\x64\Debug\Project.vcxproj.GenerateResource.cache
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\x64\Debug\Project.vcxproj.AssemblyReference.cache
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\x64\Debug\Project.vcxproj.SuggestedBindingRedirects.cache
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\x64\Debug\Project.MyForm.resources
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\x64\Debug\Project.vcxproj.GenerateResource.cache

@@ -1,0 +1,7 @@
+﻿  MyForm.cpp
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\MyForm.h(348,45): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\MyForm.h(348,19): warning C4244: 'initializing': conversion from '__int64' to 'const int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\MyForm.h(353,46): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\Project\MyForm.h(353,20): warning C4244: 'initializing': conversion from '__int64' to 'const int', possible loss of data
+  DynamicArray.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Project.vcxproj -> C:\university\git\3-sem\Object-Oriented Programming\lab07\Project\x64\Debug\Project.exe
