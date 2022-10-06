@@ -1,0 +1,4 @@
+C:\university\git\3-sem\Algorithms and data structures\lab04\lab04_asd\Project4\Project4\x64\Debug\Project4.vcxproj.AssemblyReference.cache
+C:\university\git\3-sem\Algorithms and data structures\lab04\lab04_asd\Project4\Project4\x64\Debug\Project4.vcxproj.SuggestedBindingRedirects.cache
+C:\university\git\3-sem\Algorithms and data structures\lab04\lab04_asd\Project4\Project4\x64\Debug\Project4.MyForm.resources
+C:\university\git\3-sem\Algorithms and data structures\lab04\lab04_asd\Project4\Project4\x64\Debug\Project4.vcxproj.GenerateResource.cache

@@ -1,7 +1,1 @@
-﻿  MyForm.cpp
-  Sort.cpp
-C:\university\git\3-sem\Algorithms and data structures\lab03\lab03_asd\Project3\Project3\Sort.cpp(67,8): warning C4101: 'j': unreferenced local variable
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  Generating Code...
-  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Project3.vcxproj -> C:\university\git\3-sem\Algorithms and data structures\lab03\lab03_asd\Project3\x64\Debug\Project3.exe
+﻿  Project3.vcxproj -> C:\university\git\3-sem\Algorithms and data structures\lab03\lab03_asd\Project3\x64\Debug\Project3.exe
