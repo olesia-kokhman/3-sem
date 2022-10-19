@@ -1,0 +1,13 @@
+﻿  MyForm.cpp
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(333,46): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(335,22): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(363,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(370,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(391,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(400,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(427,13): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(428,18): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(437,15): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'double', possible loss of data
+C:\university\git\3-sem\Operating Systems\lab03\Main\Main\MyForm.h(445,16): warning C4244: 'initializing': conversion from 'ULONGLONG' to 'double', possible loss of data
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Main.vcxproj -> C:\university\git\3-sem\Operating Systems\lab03\Main\x64\Debug\Main.exe

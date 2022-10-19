@@ -3,8 +3,9 @@
 #pragma once
 #include <iostream>
 #include <random>
-void mergeSort(System::Windows::Forms::RichTextBox^ richTextBox,int arr[], int l, int r);
-void merge(System::Windows::Forms::RichTextBox^ richTextBox,int arr[], int l, int m, int r);
+void mergeSort(System::Windows::Forms::RichTextBox^ richTextBox, int arr[], int l, int r);
+void merge(System::Windows::Forms::RichTextBox^ richTextBox, int arr[], int l, int m, int r);
+void printArray(System::Windows::Forms::RichTextBox^ richTextBox, int array[], int length);
 using namespace std;
 class Sort {
 public:
@@ -24,4 +25,5 @@ public:
 	bool getIsChecked();
 };
 #endif
+
 

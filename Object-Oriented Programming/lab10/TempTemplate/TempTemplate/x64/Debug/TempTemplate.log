@@ -1,0 +1,24 @@
+﻿  SomeArray.cpp
+main.obj : error LNK2019: unresolved external symbol "public: __cdecl SomeArray<int>::SomeArray<int>(int *,int)" (??0?$SomeArray@H@@QEAA@PEAHH@Z) referenced in function main
+main.obj : error LNK2019: unresolved external symbol "public: __cdecl SomeArray<int>::~SomeArray<int>(void)" (??1?$SomeArray@H@@QEAA@XZ) referenced in function main
+main.obj : error LNK2019: unresolved external symbol "public: void __cdecl SomeArray<int>::printArray(void)" (?printArray@?$SomeArray@H@@QEAAXXZ) referenced in function main
+MSVCRTD.lib(init.obj) : error LNK2019: unresolved external symbol _CrtDbgReport referenced in function _CRT_RTC_INIT
+MSVCRTD.lib(init.obj) : error LNK2019: unresolved external symbol _CrtDbgReportW referenced in function _CRT_RTC_INITW
+MSVCRTD.lib(gshandlereh4.obj) : error LNK2019: unresolved external symbol __CxxFrameHandler4 referenced in function __GSHandlerCheck_EH4
+MSVCRTD.lib(new_scalar.obj) : error LNK2019: unresolved external symbol _callnewh referenced in function "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+MSVCRTD.lib(new_scalar.obj) : error LNK2019: unresolved external symbol malloc referenced in function "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z)
+MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol strcpy_s referenced in function "void __cdecl _RTC_StackFailure(void *,char const *)" (?_RTC_StackFailure@@YAXPEAXPEBD@Z)
+MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol strcat_s referenced in function "void __cdecl _RTC_StackFailure(void *,char const *)" (?_RTC_StackFailure@@YAXPEAXPEBD@Z)
+MSVCRTD.lib(error.obj) : error LNK2019: unresolved external symbol __stdio_common_vsprintf_s referenced in function _vsprintf_s_l
+MSVCRTD.lib(error.obj) : error LNK2001: unresolved external symbol __C_specific_handler_noexcept
+MSVCRTD.lib(throw_bad_alloc.obj) : error LNK2019: unresolved external symbol __std_exception_copy referenced in function "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z)
+MSVCRTD.lib(throw_bad_alloc.obj) : error LNK2019: unresolved external symbol __std_exception_destroy referenced in function "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ)
+MSVCRTD.lib(throw_bad_alloc.obj) : error LNK2019: unresolved external symbol _CxxThrowException referenced in function "void __cdecl __scrt_throw_std_bad_alloc(void)" (?__scrt_throw_std_bad_alloc@@YAXXZ)
+MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol _wmakepath_s referenced in function "int __cdecl GetPdbDllPathFromFilePath(wchar_t const *,wchar_t *,unsigned __int64)" (?GetPdbDllPathFromFilePath@@YAHPEB_WPEA_W_K@Z)
+MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol _wsplitpath_s referenced in function "int __cdecl GetPdbDllPathFromFilePath(wchar_t const *,wchar_t *,unsigned __int64)" (?GetPdbDllPathFromFilePath@@YAHPEB_WPEA_W_K@Z)
+MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol wcscpy_s referenced in function "int __cdecl GetPdbDllPathFromFilePath(wchar_t const *,wchar_t *,unsigned __int64)" (?GetPdbDllPathFromFilePath@@YAHPEB_WPEA_W_K@Z)
+MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __vcrt_GetModuleFileNameW referenced in function "struct HINSTANCE__ * __cdecl GetPdbDll(void)" (?GetPdbDll@@YAPEAUHINSTANCE__@@XZ)
+MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __vcrt_GetModuleHandleW referenced in function "struct HINSTANCE__ * __cdecl GetPdbDll(void)" (?GetPdbDll@@YAPEAUHINSTANCE__@@XZ)
+MSVCRTD.lib(pdblkup.obj) : error LNK2019: unresolved external symbol __vcrt_LoadLibraryExW referenced in function "struct HINSTANCE__ * __cdecl GetPdbDll(void)" (?GetPdbDll@@YAPEAUHINSTANCE__@@XZ)
+MSVCRTD.lib(delete_scalar.obj) : error LNK2019: unresolved external symbol _free_dbg referenced in function "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z)
+C:\university\git\3-sem\Object-Oriented Programming\lab10\TempTemplate\x64\Debug\TempTemplate.exe : fatal error LNK1120: 22 unresolved externals

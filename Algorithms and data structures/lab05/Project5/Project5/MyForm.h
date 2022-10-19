@@ -1,32 +1,21 @@
 #pragma once
 #include "Sort.h"
 namespace Project5 {
-
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
-	/// <summary>
-	/// Summary for MyForm
-	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
 		MyForm(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
 		}
 
 	protected:
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
 		~MyForm()
 		{
 			if (components)
@@ -49,11 +38,7 @@ namespace Project5 {
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ button1;
-
 	private:
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -250,11 +235,12 @@ namespace Project5 {
 		sort.pow2();
 		DateTime start = DateTime::Now;
 		textBox3->Text = start.ToString("hh.mm.ss.fff tt");
-		mergeSort(richTextBox1, sort.array, 0, sort.length - 1);
-		for (int i = 0; i < sort.length; i++) {
-			richTextBox1->Text += (sort.array[i]).ToString("#,0.00") + " ";
+		mergeSort(richTextBox1, sort.resultArray, 0, sort.length - 1 - sort.count);
+		richTextBox1->Text += "\n\nFinal result:\n";
+		for (int i = 0; i < sort.length - sort.count; i++) {
+			richTextBox1->Text += (sort.resultArray[i]).ToString("") + " ";
 		}
-		richTextBox1->Text += " --------final";
+		richTextBox1->Text += "\n-------- final";
 		DateTime end = DateTime::Now;
 		textBox4->Text = end.ToString("hh:mm:ss.fff tt");
 		TimeSpan inverval = end - start;

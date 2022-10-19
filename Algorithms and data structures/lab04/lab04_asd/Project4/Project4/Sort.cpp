@@ -42,6 +42,7 @@ int Sort::findIndexMax() {
 }
 int counter = 0;
 void quickSort(System::Windows::Forms::RichTextBox^ richTextBox, double* array, int left, int right) {
+    int size = right;
     int pivot = (left + right) / 2;
     int i = left, j = right;
     while (i <= j) {
@@ -56,10 +57,11 @@ void quickSort(System::Windows::Forms::RichTextBox^ richTextBox, double* array, 
             array[i] = array[j];
             array[j] = temp;
             i++, j--;
-            for (int k = 0; k <= right; k++) {
+            richTextBox->Text += "\nStep " + counter + ", pivot - " + array[pivot].ToString("#,0.00") + "\n";
+            for (int k = 0; k <= size; k++) {
                 richTextBox->Text += array[k].ToString("#,0.00") + " ";
             }
-            richTextBox->Text += System::Convert::ToString("-------step " + counter + " \n");
+           // richTextBox->Text += System::Convert::ToString("-------step " + counter + " p = " + array[pivot] + "\n");
             counter++;
         }
         if (j > left) {

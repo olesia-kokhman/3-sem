@@ -234,10 +234,11 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	DateTime start = DateTime::Now;
 	textBox3->Text = start.ToString("hh.mm.ss.fff tt");
 	quickSort(richTextBox1, sort.array, sort.findIndexMax(), size - 1);
+	richTextBox1->Text += "\nFinal sorted array :\n";
 	for (int i = 0; i < sort.length; i++) {
 		richTextBox1->Text += (sort.array[i]).ToString("#,0.00") + " ";
 	}
-	richTextBox1->Text += " --------final";
+	//richTextBox1->Text += " --------final";
 	DateTime end = DateTime::Now;
 	textBox4->Text = end.ToString("hh:mm:ss.fff tt");
 	TimeSpan inverval = end - start;

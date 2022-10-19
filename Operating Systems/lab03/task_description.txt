@@ -1,0 +1,11 @@
+1) написати TaskAgain;                    +
+2) реалізувати createProcess();           +
+3) реалізувати stopProcess();             +
+4) реалізувати endProcess();              +
+5) реалізувати killProcess();             +
+6) створити форму, додати функції в форму +
+7) реалізувати changePriority();          +
+8) реалізувати resumeProcess();           +
+9) реалізувати measureTime                +
+10) звіт.                                 +
+
