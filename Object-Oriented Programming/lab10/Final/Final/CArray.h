@@ -1,9 +1,6 @@
 #ifndef CARRAY_H
 #define CARRAY_H
 #pragma once
-#include <iostream>
-#include <algorithm>
-#include <random>
 template <typename T>
 class CArray {
 private:

@@ -1,9 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS_
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 int main(int argc, char* argv[]) {
-	double  A = atof(argv[1]), B = atof(argv[2]), step = atof(argv[3]), accuracy = atof(argv[4]), sd, x, i, taylor, formula;
+	double  A = atof(argv[1]), B = atof(argv[2]), step = atof(argv[3]), accuracy = atof(argv[4]), x, taylor, formula;
+	int i, sd;
 	for (x = A; x < B; x += step) {
 		taylor = 1;  i = 2; sd = 1; formula = 0;
 		while (fabs(sd) > accuracy) {

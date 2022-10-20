@@ -1,4 +1,2 @@
-﻿  MyForm.cpp
-C:\university\git\3-sem\Algorithms and data structures\lab06\Project6\Project6\MyForm.h(223,11): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+﻿  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   Project6.vcxproj -> C:\university\git\3-sem\Algorithms and data structures\lab06\Project6\x64\Debug\Project6.exe

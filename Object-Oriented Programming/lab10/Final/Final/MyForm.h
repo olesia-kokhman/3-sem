@@ -1,8 +1,6 @@
 #pragma once
 #include "CArray.h"
 #include "CString.h"
-#include "CArray.cpp"
-#include "CString.cpp"
 namespace Final {
 
 	using namespace System;
@@ -187,10 +185,17 @@ namespace Final {
 		CString third = CString(three, sizeof(three) / sizeof(char));
 		CString fourth = CString(four, sizeof(four) / sizeof(char));
 		CString fifth = CString(five, sizeof(five) / sizeof(char));
-		CString* _array = new CString[size]{ first, second,third,fourth, fifth };
+		CString* _array = new CString[size];
+		_array[0] = first;
+		_array[1] = second;
+		_array[2] = third;
+		_array[3] = fourth;
+		_array[4] = fifth;
+		//{ first, second, third, fourth, fifth };
 	    CArray<CString> object(_array, size);
+		//richTextBox1 << object.
 		object.printArray(richTextBox1);
-		richTextBox1 << object.min();
+		//richTextBox1 << object.min();
 		object.sortAscending();
 		object.printArray(richTextBox1);
 		object.sortDescending();

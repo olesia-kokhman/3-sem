@@ -28,6 +28,11 @@ bool operator>(const CString& first, const CString& second) {
 }
 void operator<<(System::Windows::Forms::RichTextBox^ richTextBox, const CString& object) {
 	for (int i = 0; i < object.length; i++) {
-		richTextBox->Text += System::Convert::ToString(object.array[i]);
+		richTextBox->Text += (object.array[i]).ToString();
+	}
+}
+void operator+=(std::string str, const CString& object) {
+	for (int i = 0; i < object.length; i++) {
+		str += object.array[i];
 	}
 }

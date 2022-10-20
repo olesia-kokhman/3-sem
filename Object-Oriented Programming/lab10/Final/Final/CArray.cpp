@@ -19,7 +19,11 @@ CArray<T>::~CArray() {
 template <typename T>
 void CArray<T>::printArray(System::Windows::Forms::RichTextBox^ richTextBox) {
 	for (int i = 0; i < size; i++) {
-		richTextBox->Text += System::Convert::ToString(array[i] + " ");
+		std::string init;
+		init += array[i];
+		String^ str = gcnew String(init.c_str());
+		//richTextBox << this;
+		richTextBox->Text += str + " ";
 	}
 	richTextBox->Text += "\n";
 }
