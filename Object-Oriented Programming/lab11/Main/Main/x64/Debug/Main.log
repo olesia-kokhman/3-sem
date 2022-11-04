@@ -1,0 +1,12 @@
+﻿  main.cpp
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(18,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(22,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(27,15): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(28,27): warning C4244: 'initializing': conversion from 'float' to 'size_t', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(33,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(40,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(44,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(45,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(71,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\Main\main.cpp(111,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Main.vcxproj -> C:\university\git\3-sem\Object-Oriented Programming\lab11\Main\x64\Debug\Main.exe

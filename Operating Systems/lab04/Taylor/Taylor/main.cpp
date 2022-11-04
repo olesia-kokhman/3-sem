@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-#include <stdlib.h>
 int main(int argc, char* argv[]) {
 	double  A = atof(argv[1]), B = atof(argv[2]), step = atof(argv[3]), accuracy = atof(argv[4]), x, taylor, formula;
 	int i, sd;
@@ -10,7 +9,7 @@ int main(int argc, char* argv[]) {
 			sd = sd * (-1) * x;
 			taylor += sd * i;
 			++i;
-		}formula = pow(1 + x, -2);
+		}formula = pow(1.0 + x, -2.0);
 		printf("x = % lf\tformula = % lf\ttaylor = % lf|\tdiv=%lf\n ", x, formula, taylor, fabs(formula - taylor));
 	}
 	return 0;

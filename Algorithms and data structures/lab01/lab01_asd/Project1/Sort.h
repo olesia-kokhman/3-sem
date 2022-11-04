@@ -24,6 +24,7 @@ public:
 	void isOrdered();
 	bool getIsChecked();
 	void firstLast();
+	void bubble();
 };
 #endif
 

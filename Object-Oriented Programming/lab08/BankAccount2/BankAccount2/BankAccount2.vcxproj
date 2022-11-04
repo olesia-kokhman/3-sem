@@ -122,6 +122,7 @@
     <ClCompile Include="Social.cpp" />
     <ClCompile Include="Standard.cpp" />
     <ClCompile Include="StringConvertion.h" />
+    <ClCompile Include="VIP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -129,6 +130,7 @@
     </ClInclude>
     <ClInclude Include="Social.h" />
     <ClInclude Include="Standard.h" />
+    <ClInclude Include="VIP.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">

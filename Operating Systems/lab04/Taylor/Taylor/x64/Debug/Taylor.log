@@ -1,2 +1,3 @@
 ﻿  main.cpp
+C:\university\git\3-sem\Operating Systems\lab04\Taylor\Taylor\main.cpp(9,19): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   Taylor.vcxproj -> C:\university\git\3-sem\Operating Systems\lab04\Taylor\x64\Debug\Taylor.exe

@@ -334,20 +334,21 @@ private: System::Void buttonClick(System::Object^ sender, System::EventArgs^ e) 
 	//System::Windows::Forms::Button^ button = (Button^)sender;
 	Sort* sort = new Sort(size);
 	sort->randomNumbers();
-	textBox10 << sort;
+	/*textBox10 << sort;
 	sort->firstLast();
 	SortWithFlag* sortWithFlag = new SortWithFlag(sort);
 	sortWithFlag->firstLast();
 		richTextBox1 << sort;
-		sort->increaseCount();
+		sort->increaseCount();*/
 		DateTime start = DateTime::Now;
 		textBox2->Text = start.ToString("hh.mm.ss.fff tt");
-		sort->bubbleSort(richTextBox1);
+		//sort->bubbleSort(richTextBox1);
+		sort->bubble();
 		DateTime end = DateTime::Now;
 		textBox3->Text = end.ToString("hh:mm:ss.fff tt");
 		TimeSpan inverval = end - start;
 		textBox4->Text = inverval.Seconds.ToString() + "." + inverval.Milliseconds.ToString();
-		sort->isOrdered();
+		/*sort->isOrdered();
 		textBox5->Text = sort->getIsChecked().ToString();
 		richTextBox2 << sortWithFlag;
 		sortWithFlag->increaseCount();
@@ -359,7 +360,7 @@ private: System::Void buttonClick(System::Object^ sender, System::EventArgs^ e) 
 		TimeSpan inverval2 = end2 - start2;
 		textBox8->Text = inverval2.Seconds.ToString() + "." + inverval2.Milliseconds.ToString();
 		sortWithFlag->isOrdered();
-		textBox9->Text = sortWithFlag->getIsChecked().ToString();
+		textBox9->Text = sortWithFlag->getIsChecked().ToString();*/
 }
 };
 }

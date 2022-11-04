@@ -1,0 +1,7 @@
+﻿  functions.cpp
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Project11\Project11\functions.cpp(3,41): error C2059: syntax error: ')'
+C:\university\git\3-sem\Object-Oriented Programming\lab11\Project11\Project11\functions.cpp(4,1): fatal error C1004: unexpected end-of-file found
+  MyForm.cpp
+  MyStack.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  Generating Code...

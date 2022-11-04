@@ -2,6 +2,9 @@
 #include "Standard.h"
 #include "StringConvertion.h"
 #include "Social.h"
+#include "VIP.h"
+#include <iostream>
+#include <fstream>
 namespace BankAccount2 {
 
 	using namespace System;
@@ -68,6 +71,10 @@ namespace BankAccount2 {
 	private: System::Windows::Forms::ComboBox^ comboBox2;
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::Button^ button10;
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::Label^ label8;
 	private:
 		/// <summary>
 		/// Required designer variable.
@@ -111,6 +118,10 @@ namespace BankAccount2 {
 			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->button10 = (gcnew System::Windows::Forms::Button());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->transactionHistory))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->Info))->BeginInit();
 			this->SuspendLayout();
@@ -148,7 +159,7 @@ namespace BankAccount2 {
 			// 
 			// textBox10
 			// 
-			this->textBox10->Location = System::Drawing::Point(203, 374);
+			this->textBox10->Location = System::Drawing::Point(169, 374);
 			this->textBox10->Multiline = true;
 			this->textBox10->Name = L"textBox10";
 			this->textBox10->Size = System::Drawing::Size(161, 30);
@@ -156,7 +167,7 @@ namespace BankAccount2 {
 			// 
 			// textBox9
 			// 
-			this->textBox9->Location = System::Drawing::Point(534, 374);
+			this->textBox9->Location = System::Drawing::Point(503, 374);
 			this->textBox9->Multiline = true;
 			this->textBox9->Name = L"textBox9";
 			this->textBox9->Size = System::Drawing::Size(161, 30);
@@ -164,7 +175,7 @@ namespace BankAccount2 {
 			// 
 			// textBox8
 			// 
-			this->textBox8->Location = System::Drawing::Point(868, 338);
+			this->textBox8->Location = System::Drawing::Point(837, 340);
 			this->textBox8->Multiline = true;
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(161, 30);
@@ -172,7 +183,7 @@ namespace BankAccount2 {
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(534, 338);
+			this->textBox6->Location = System::Drawing::Point(503, 338);
 			this->textBox6->Multiline = true;
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(161, 30);
@@ -180,7 +191,7 @@ namespace BankAccount2 {
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(367, 338);
+			this->textBox5->Location = System::Drawing::Point(336, 338);
 			this->textBox5->Multiline = true;
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(161, 30);
@@ -188,7 +199,7 @@ namespace BankAccount2 {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(203, 338);
+			this->textBox4->Location = System::Drawing::Point(169, 338);
 			this->textBox4->Multiline = true;
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(161, 30);
@@ -196,7 +207,7 @@ namespace BankAccount2 {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(36, 338);
+			this->textBox3->Location = System::Drawing::Point(2, 338);
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(161, 30);
@@ -207,7 +218,7 @@ namespace BankAccount2 {
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(29, 388);
+			this->label5->Location = System::Drawing::Point(-2, 426);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(168, 22);
 			this->label5->TabIndex = 45;
@@ -218,7 +229,7 @@ namespace BankAccount2 {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(34, 151);
+			this->label4->Location = System::Drawing::Point(12, 154);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(44, 22);
 			this->label4->TabIndex = 44;
@@ -229,7 +240,7 @@ namespace BankAccount2 {
 			this->button7->Enabled = false;
 			this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button7->Location = System::Drawing::Point(868, 284);
+			this->button7->Location = System::Drawing::Point(837, 286);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(161, 48);
 			this->button7->TabIndex = 43;
@@ -242,7 +253,7 @@ namespace BankAccount2 {
 			this->button6->Enabled = false;
 			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button6->Location = System::Drawing::Point(701, 284);
+			this->button6->Location = System::Drawing::Point(670, 284);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(161, 48);
 			this->button6->TabIndex = 42;
@@ -255,7 +266,7 @@ namespace BankAccount2 {
 			this->button5->Enabled = false;
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button5->Location = System::Drawing::Point(534, 284);
+			this->button5->Location = System::Drawing::Point(503, 284);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(161, 48);
 			this->button5->TabIndex = 41;
@@ -268,7 +279,7 @@ namespace BankAccount2 {
 			this->button4->Enabled = false;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button4->Location = System::Drawing::Point(367, 284);
+			this->button4->Location = System::Drawing::Point(336, 284);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(161, 48);
 			this->button4->TabIndex = 40;
@@ -281,7 +292,7 @@ namespace BankAccount2 {
 			this->button3->Enabled = false;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button3->Location = System::Drawing::Point(203, 284);
+			this->button3->Location = System::Drawing::Point(169, 284);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(161, 48);
 			this->button3->TabIndex = 39;
@@ -294,7 +305,7 @@ namespace BankAccount2 {
 			this->button2->Enabled = false;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(36, 284);
+			this->button2->Location = System::Drawing::Point(2, 284);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(161, 48);
 			this->button2->TabIndex = 38;
@@ -305,28 +316,28 @@ namespace BankAccount2 {
 			// transactionHistory
 			// 
 			this->transactionHistory->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->transactionHistory->Location = System::Drawing::Point(38, 413);
+			this->transactionHistory->Location = System::Drawing::Point(2, 451);
 			this->transactionHistory->Name = L"transactionHistory";
 			this->transactionHistory->RowHeadersWidth = 51;
 			this->transactionHistory->RowTemplate->Height = 24;
-			this->transactionHistory->Size = System::Drawing::Size(991, 220);
+			this->transactionHistory->Size = System::Drawing::Size(1133, 220);
 			this->transactionHistory->TabIndex = 37;
 			// 
 			// Info
 			// 
 			this->Info->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->Info->Location = System::Drawing::Point(36, 176);
+			this->Info->Location = System::Drawing::Point(12, 179);
 			this->Info->Name = L"Info";
 			this->Info->RowHeadersWidth = 140;
 			this->Info->RowTemplate->Height = 24;
-			this->Info->Size = System::Drawing::Size(991, 55);
+			this->Info->Size = System::Drawing::Size(1123, 63);
 			this->Info->TabIndex = 36;
 			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(447, 122);
+			this->button1->Location = System::Drawing::Point(452, 115);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(161, 48);
 			this->button1->TabIndex = 35;
@@ -411,16 +422,16 @@ namespace BankAccount2 {
 				static_cast<System::Byte>(0)));
 			this->label7->Location = System::Drawing::Point(613, 25);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(308, 22);
+			this->label7->Size = System::Drawing::Size(254, 22);
 			this->label7->TabIndex = 58;
-			this->label7->Text = L"Specification(not needed if standard):";
+			this->label7->Text = L"Specification(needed if social):";
 			// 
 			// button9
 			// 
 			this->button9->Enabled = false;
 			this->button9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button9->Location = System::Drawing::Point(701, 338);
+			this->button9->Location = System::Drawing::Point(670, 338);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(161, 48);
 			this->button9->TabIndex = 59;
@@ -428,11 +439,57 @@ namespace BankAccount2 {
 			this->button9->UseVisualStyleBackColor = true;
 			this->button9->Click += gcnew System::EventHandler(this, &MyForm::buttonsClick);
 			// 
+			// button10
+			// 
+			this->button10->Enabled = false;
+			this->button10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button10->Location = System::Drawing::Point(1004, 288);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(161, 44);
+			this->button10->TabIndex = 60;
+			this->button10->Text = L"repayACredit";
+			this->button10->UseVisualStyleBackColor = true;
+			this->button10->Click += gcnew System::EventHandler(this, &MyForm::buttonsClick);
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(1004, 340);
+			this->textBox7->Multiline = true;
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(161, 30);
+			this->textBox7->TabIndex = 61;
+			// 
+			// button11
+			// 
+			this->button11->Enabled = false;
+			this->button11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button11->Location = System::Drawing::Point(2, 696);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(161, 44);
+			this->button11->TabIndex = 62;
+			this->button11->Text = L"printClass";
+			this->button11->UseVisualStyleBackColor = true;
+			this->button11->Click += gcnew System::EventHandler(this, &MyForm::button11_Click);
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(215, 709);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(0, 16);
+			this->label8->TabIndex = 63;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1058, 658);
+			this->ClientSize = System::Drawing::Size(1176, 752);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->button11);
+			this->Controls->Add(this->textBox7);
+			this->Controls->Add(this->button10);
 			this->Controls->Add(this->button9);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->comboBox2);
@@ -474,18 +531,22 @@ namespace BankAccount2 {
 #pragma endregion
 		int type = 0;
 		int typeSpec = 0;
-		Standard* account;
+		Standard* standard;
+		Social* social;
+		VIP* vip;
 private: System::Void createButton(System::Object^ sender, System::EventArgs^ e) {
 	String^ tempType = comboBox1->Text;
 	String^ tempSpec = comboBox2->Text;
 	Info->RowCount = 1;
-	Info->ColumnCount = 6;
+	Info->ColumnCount = 7;
+	transactionHistory->ColumnCount = 5;
 	Info->Columns[0]->HeaderText = "CardNumber";
 	Info->Columns[1]->HeaderText = "Type";
 	Info->Columns[2]->HeaderText = "Balance";
 	Info->Columns[3]->HeaderText = "Commission";
 	Info->Columns[4]->HeaderText = "BonusBalance";
 	Info->Columns[5]->HeaderText = "CreditPercent";
+	Info->Columns[6]->HeaderText = "Repayment";
 	String^ tempNumber = textBox2->Text;
 	Info->Rows[0]->Cells[0]->Value = tempNumber;
 	if (tempSpec == "Benefit") {
@@ -510,22 +571,30 @@ private: System::Void createButton(System::Object^ sender, System::EventArgs^ e)
 		Info->Rows[0]->Cells[3]->Value = "0.05%";
 		Info->Rows[0]->Cells[4]->Value = "unavailable";
 		Info->Rows[0]->Cells[5]->Value = "unavailable";
+		Info->Rows[0]->Cells[6]->Value = "unavailable";
 	}
 	else if (tempType == "Social") {
 		type = 2;
 		Info->Rows[0]->Cells[1]->Value = "Social: " + tempSpec;
 		Info->Rows[0]->Cells[2]->Value = "0.0";
-		Info->Rows[0]->Cells[3]->Value = "0.05%";
+		Info->Rows[0]->Cells[3]->Value = "0.0%";
 		Info->Rows[0]->Cells[4]->Value = "0.0";
 		Info->Rows[0]->Cells[5]->Value = "unavailable";
+		Info->Rows[0]->Cells[6]->Value = "unavailable";
 	}
 	else if (tempType == "VIP") {
 		type = 3;
+		Info->Rows[0]->Cells[1]->Value = "VIP";
+		Info->Rows[0]->Cells[2]->Value = "0.0";
+		Info->Rows[0]->Cells[3]->Value = "0.0%";
+		Info->Rows[0]->Cells[4]->Value = "0.0";
+		Info->Rows[0]->Cells[5]->Value = "20%";
+		Info->Rows[0]->Cells[6]->Value = "0.0";
 	}
 
-	
 }
 private: System::Void buttonsClick(System::Object^ sender, System::EventArgs^ e) {
+	std::ofstream file("output.txt", ios::app);
 	System::Windows::Forms::Button^ button = (Button^)sender;
 	System::String^ textOfButtons = button->Text;
 	String^ tempPassword = textBox1->Text;
@@ -542,7 +611,7 @@ private: System::Void buttonsClick(System::Object^ sender, System::EventArgs^ e)
 			button3->Enabled = true;
 			button4->Enabled = true;
 			button5->Enabled = true;
-			account = new Standard(number, password);
+			standard = new Standard(number, password);
 		}
 		else if (type == 2) {
 			button2->Enabled = true;
@@ -551,7 +620,7 @@ private: System::Void buttonsClick(System::Object^ sender, System::EventArgs^ e)
 			button5->Enabled = true;
 			button6->Enabled = true;
 			button9->Enabled = true;
-			account = new Social(number, password, spec);
+			social = new Social(number, password, spec);
 		}
 		else if (type == 3) {
 			button2->Enabled = true;
@@ -560,60 +629,164 @@ private: System::Void buttonsClick(System::Object^ sender, System::EventArgs^ e)
 			button5->Enabled = true;
 			button6->Enabled = true;
 			button7->Enabled = true;
-			// VIP
+			button9->Enabled = true;
+			button10->Enabled = true;
+			vip = new VIP(number, password);
 		}
 		button8->Enabled = false;
+		button11->Enabled = true;
 	}
 	else if (textOfButtons == "topUp") {
 		double sum = System::Convert::ToDouble(textBox3->Text);
-		account->topUp(sum);
-		Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(account->getBalance());
+		double currentBalance = 0;
+		if (type == 1) {
+			standard->topUp(sum);
+			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(standard->getBalance());
+			currentBalance = standard->getBalance();
+		}
+		else if (type == 2) {
+			social->topUp(sum);
+			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(social->getBalance());
+			currentBalance = social->getBalance();
+		}
+		else if(type == 3) {
+			vip->topUp(sum);
+			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+			currentBalance = vip->getBalance();
+		}
+		transactionHistory->Rows->Insert(0, "top up", tempNumber, sum, "added", currentBalance);
+		file << "top up" << " " << toStandardString(tempNumber) << " " << to_string(sum) << " " << "added " << to_string(currentBalance) << "\n";
 	}
 	else if (textOfButtons == "withdrawCash") {
 		double sum = System::Convert::ToDouble(textBox5->Text);
-		if (account->withdrawCash(sum)) {
-			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(account->getBalance());
+		double currentBalance;
+		if (type == 1) {
+			if (standard->withdrawCash(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(standard->getBalance());
+				currentBalance = standard->getBalance();
+			}
 		}
-		else {
-			// message box 
-			Info->Rows[0]->Cells[2]->Value = "false";
+		else if (type == 2) {
+			if (social->withdrawCash(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(social->getBalance());
+				currentBalance = social->getBalance();
+			}
 		}
+		else if (type == 3) {
+			if (vip->withdrawCash(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+			}
+			currentBalance = vip->getBalance();
+		}
+		transactionHistory->Rows->Insert(0, "withdraw cash", tempNumber, sum, "substracted", currentBalance);
+		file << "withdraw cash" << " " << toStandardString(tempNumber) << " " << to_string(sum) << " " << "substracted " << to_string(currentBalance) << "\n";
 	}
 	else if (textOfButtons == "transferFunds") {
 		String^ tempAnotherAccount = textBox6->Text;
 		string anotherAccount = toStandardString(tempAnotherAccount);
 		double sum = System::Convert::ToDouble(textBox9->Text);
-		if (account->transferFunds(sum)) {
-			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(account->getBalance());
+		double currentBalance;
+		if (type == 1) {
+			if (standard->transferFunds(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(standard->getBalance());
+				currentBalance = standard->getBalance();
+			}
 		}
-		else {
-			// message box
+		else if (type == 2) {
+			if (social->transferFunds(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(social->getBalance());
+				currentBalance = social->getBalance();
+			}
 		}
+		else if (type == 3) {
+			if (vip->transferFunds(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+				currentBalance = vip->getBalance();
+			}
+		}
+		transactionHistory->Rows->Insert(0, "transfer funds", tempAnotherAccount, sum, "substracted", currentBalance );
+		file << "transfer funds" << " " << toStandardString(tempAnotherAccount) << " " << to_string(sum) << " " << "substracted " << to_string(currentBalance) << "\n";
 	}
 	else if (textOfButtons == "getBonuses") {
-		Info->Rows[0]->Cells[4]->Value = System::Convert::ToString(account->getBonuses());
+		if (type == 2) {
+			Info->Rows[0]->Cells[4]->Value = System::Convert::ToString(social->getBonuses());
+		}
+		else if (type == 3) {
+			Info->Rows[0]->Cells[4]->Value = System::Convert::ToString(vip->getBonuses());
+		}
 	}
 	else if (textOfButtons == "transferBonuses") {
-		account->setBalance(account->getBonuses());
-		Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(account->getBalance());
-		Info->Rows[0]->Cells[4]->Value = "0.0";
+		if (type == 2) {
+			double bonuses = social->getBonuses();
+			social->addBonuses(bonuses);
+			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(social->getBalance());
+			Info->Rows[0]->Cells[4]->Value = "0.0";
+			transactionHistory->Rows->Insert(0, "transfer bonuses", tempNumber, social->getBonuses(), "added", social->getBonuses());
+			file << "transfer bonuses" << " " << toStandardString(tempNumber) << " " << to_string(bonuses) << " " << "added " << to_string(social->getBalance()) << "\n";
+		}
+		else if (type == 3) {
+			vip->addBonuses(vip->getBonuses());
+			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+			Info->Rows[0]->Cells[4]->Value = "0.0";
+			transactionHistory->Rows->Insert(0, "transfer bonuses", tempNumber, vip->getBonuses(), "added", vip->getBonuses());
+			file << "transfer bonuses" << " " << toStandardString(tempNumber) << " " << to_string(vip->getBonuses()) << " " << "added " << to_string(vip->getBalance()) << "\n";
+		}
 	}
 	else if (textOfButtons == "takeACredit") {
 		double sum = System::Convert::ToDouble(textBox8->Text);
-		Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(account->getBalance());
-		//account.takeCredit(sum);
+		vip->takeCredit(sum);
+		Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+		Info->Rows[0]->Cells[6]->Value = System::Convert::ToString(vip->getGeneralCredit());
+		transactionHistory->Rows->Insert(0, "take a credit", tempNumber, sum, "added", vip->getBalance());
+		file << "take a credit" << " " << toStandardString(tempNumber) << " " << to_string(sum) << " " << "added " << to_string(vip->getBalance()) << "\n";
+	}
+	else if (textOfButtons == "repayACredit") {
+	    double sum = System::Convert::ToDouble(textBox7->Text);
+		vip->repayCredit(sum);
+		Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+		Info->Rows[0]->Cells[6]->Value = System::Convert::ToString(vip->getGeneralCredit());
+		transactionHistory->Rows->Insert(0, "repay a credit", tempNumber, sum, "substracted", vip->getBalance());
+		file << "repay a credit" << " " << toStandardString(tempNumber) << " " << to_string(sum) << " " << "substacted " << to_string(vip->getBalance()) << "\n";
 	}
 	else if (textOfButtons == "payTheUtilityBill") {
 		String^ tempBill = textBox4->Text;
 		string bill = toStandardString(tempBill);
 		double sum = System::Convert::ToDouble(textBox10->Text);
-		if (account->payUtilityBill(sum)) {
-			Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(account->getBalance());
+		double currentBalance;
+		if (type == 1) {
+			if (standard->payUtilityBill(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(standard->getBalance());
+				currentBalance = standard->getBalance();
+			}
 		}
-		else {
-			// message box 
+		else if (type == 2) {
+			if (social->payUtilityBill(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(social->getBalance());
+				currentBalance = social->getBalance();
+			}
 		}
+		else if (type == 3) {
+			if (vip->payUtilityBill(sum)) {
+				Info->Rows[0]->Cells[2]->Value = System::Convert::ToString(vip->getBalance());
+				currentBalance = vip->getBalance();
+			}
+		}
+		transactionHistory->Rows->Insert(0, "pay the utility bill", tempBill, sum, "substracted", currentBalance);
+		file << "pay the utility bill" << " " << toStandardString(tempBill) <<" " << to_string(sum) << " " << "substacted " << to_string(currentBalance) << "\n";
 	}
+}
+private: System::Void button11_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ str;
+	if (type == 1) {
+	    str = gcnew String(standard->print().c_str());
+	}
+	else if (type == 2) {
+		str = gcnew String(social->print().c_str());
+	}
+	else if (type == 3) {
+		str = gcnew String(vip->print().c_str());
+	}
+	label8->Text = str;
 }
 };
 }

@@ -11,6 +11,9 @@ Social::Social(string type) {
 	this->bonusPercent = 0.05;
 	this->commission = 0;
 }
+Social::Social(string number, string password) {
+	Standard(number, password);
+}
 Social::Social(string number, string password, string type) {
 	Standard(number, password);
 	this->type = type;
@@ -24,4 +27,10 @@ double Social::getBonuses() const {
 	else {
 		return 0;
 	}
+}
+void Social::addBonuses(double sum) {
+	this->balance += sum;
+}
+string Social::print() const{
+	return "Social";
 }

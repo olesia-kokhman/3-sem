@@ -50,7 +50,4 @@ double Standard::getBalance() const {
 string Standard::print() const {
 	return "Standard";
 }
-void Standard::setBalance(double sum) {
-	this->balance += sum;
-}
 

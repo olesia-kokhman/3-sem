@@ -17,6 +17,19 @@ void Sort::firstLast() {
 		}
 	}
  }
+void Sort::bubble() {
+	int size = length;
+	while (length >= 0) {
+		for (int i = 1; i < length; i++) {
+			if (array[i - 1] > array[i]) {
+				double temp = array[i];
+				array[i] = array[i - 1];
+				array[i - 1] = temp;
+			}
+		}
+		size--;
+	}
+}
 Sort::~Sort() {
 	delete[] array;
 }

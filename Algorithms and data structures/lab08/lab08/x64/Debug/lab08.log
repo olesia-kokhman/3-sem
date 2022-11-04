@@ -1,0 +1,6 @@
+﻿  LinkedList.cpp
+  MyForm.cpp
+C:\university\git\3-sem\Algorithms and data structures\lab08\lab08\MyForm.h(341,27): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Generating Code...
+  LinkedList.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  lab08.vcxproj -> C:\university\git\3-sem\Algorithms and data structures\lab08\x64\Debug\lab08.exe

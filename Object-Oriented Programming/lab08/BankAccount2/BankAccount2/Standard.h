@@ -17,9 +17,7 @@ public:
 	void topUp(double sum);
 	bool payUtilityBill(double sum);
 	double getBalance() const;
-	string print() const;
-	virtual double getBonuses() const; // inactive
-	void setBalance(double sum);
+	virtual string print() const;
 };
 #endif
 //Звичайний (стандартна комісія на оплату комунальних послуг, перерахунок на інший рахунок, зняття готівки).
