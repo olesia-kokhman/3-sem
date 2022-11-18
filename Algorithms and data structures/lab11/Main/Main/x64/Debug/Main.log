@@ -1,0 +1,15 @@
+﻿  MyForm.cpp
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(146,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(167,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(171,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(149,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(150,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(153,11): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(155,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(160,12): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(164,13): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(178,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(179,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Algorithms and data structures\lab11\Main\Main\MyForm.h(213): warning C4715: 'Main::MyForm::KMP': not all control paths return a value
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Main.vcxproj -> C:\university\git\3-sem\Algorithms and data structures\lab11\Main\x64\Debug\Main.exe

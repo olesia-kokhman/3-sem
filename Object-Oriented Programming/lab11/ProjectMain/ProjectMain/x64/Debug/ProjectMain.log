@@ -1,15 +1,15 @@
 ﻿  MyForm.cpp
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(334,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(350,40): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(364,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(368,15): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'float', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(369,27): warning C4244: 'initializing': conversion from 'float' to 'size_t', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(374,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(394,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(395,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(424,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(462,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(477,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(487,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(312,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(328,40): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(342,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(346,15): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(347,27): warning C4244: 'initializing': conversion from 'float' to 'size_t', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(352,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(372,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(373,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(402,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(440,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(455,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\ProjectMain\MyForm.h(465,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   ProjectMain.vcxproj -> C:\university\git\3-sem\Object-Oriented Programming\lab11\ProjectMain\x64\Debug\ProjectMain.exe

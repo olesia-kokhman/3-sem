@@ -1,0 +1,13 @@
+﻿  MyForm.cpp
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(167,3): error C2672: 'lab09UI::MyForm::callMazeOperations': no matching overloaded function found
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(167,1): error C2784: 'void lab09UI::MyForm::callMazeOperations(T *)': could not deduce template argument for 'T *' from 'SimpleMazeBuilder'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(173): message : see declaration of 'lab09UI::MyForm::callMazeOperations'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(168,3): error C2672: 'lab09UI::MyForm::callMazeOperations': no matching overloaded function found
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(168,1): error C2784: 'void lab09UI::MyForm::callMazeOperations(T *)': could not deduce template argument for 'T *' from 'MiddleMazeBuilder'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(173): message : see declaration of 'lab09UI::MyForm::callMazeOperations'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(169,3): error C2672: 'lab09UI::MyForm::callMazeOperations': no matching overloaded function found
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(169,1): error C2784: 'void lab09UI::MyForm::callMazeOperations(T *)': could not deduce template argument for 'T *' from 'ComplexMazeBuilder'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(173): message : see declaration of 'lab09UI::MyForm::callMazeOperations'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(170,3): error C2672: 'lab09UI::MyForm::callMazeOperations': no matching overloaded function found
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(170,1): error C2784: 'void lab09UI::MyForm::callMazeOperations(T *)': could not deduce template argument for 'T *' from 'MazeBuilder'
+C:\university\git\3-sem\Object-Oriented Programming\lab09\lab09_UI\lab09_UI\MyForm.h(173): message : see declaration of 'lab09UI::MyForm::callMazeOperations'

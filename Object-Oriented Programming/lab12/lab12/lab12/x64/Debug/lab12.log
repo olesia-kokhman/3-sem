@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+C:\university\git\3-sem\Object-Oriented Programming\lab12\lab12\lab12\MyForm.h(308): warning C4172: returning address of local variable or temporary
+  Chyslo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  lab12.vcxproj -> C:\university\git\3-sem\Object-Oriented Programming\lab12\lab12\x64\Debug\lab12.exe

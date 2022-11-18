@@ -1,0 +1,81 @@
+void BoyerMoore(string txt, string pat)
+        {
+            Steps += $"Search: {pat}\n";
+            int patSize = pat.Length;
+            int txtSize = txt.Length;
+
+            bool find = false, nextstep = false;
+            int previndex = 0;
+            char stopsymbol;
+            int startpos = 0;
+            int k = 0, j = 0, step = 0;
+
+            while (startpos + patSize <= txtSize)
+            {
+                step = 0;
+                nextstep = false;
+                startpos = previndex;
+                for (int i = 0; i < patSize; i++)
+                {
+                    if (pat[patSize - i - 1] == txt[startpos + patSize - i - 1])
+                    {
+                        Steps += $"\"{(pat[patSize - i - 1])}\"  ==  \"{txt[startpos + patSize - i - 1]}\" , p:  {(startpos + patSize - i - 1)}\n";
+                        if (i == patSize - 1)
+                        {
+                            Steps += $"Found pattern at index {startpos}\n";
+                            find = true;
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        k = startpos + patSize - i - 1;
+                        stopsymbol = txt[startpos + patSize - i - 1];//стоп-символ
+                        Steps += $"Found stop symbol:  \"{stopsymbol}\"\n";
+                        previndex = startpos;
+                        for (int m = 0; m < patSize; m++)
+                        {
+                            if (pat[patSize - m - 1] == stopsymbol)
+                            {
+                                j = startpos + patSize - m - 1;
+                                if (k > j) //2 ситуація k>j
+                                {
+                                    Steps += $"k = {k} j = {j} , so step: {k - j} \n";
+                                    step = k - j;
+                                    nextstep = true;
+                                    break;
+                                }
+                                else if (k < j) //3 ситуація k<j
+                                {
+                                    Steps += $"k = {k}  j = {j} , so step: {1} \n";
+                                    step = 1;
+                                    nextstep = true;
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                Steps += $"\"{pat[patSize - m - 1]}\"  !=  \"{stopsymbol}\" , p: {(startpos + patSize - m - 1)}\n";
+                                previndex--;
+                            }
+                        }
+                        if (previndex + patSize == startpos) //1 ситуація step = довжині pat
+                        {
+                            Steps += $"There are no matches. So step: {patSize} \n";
+                            nextstep = true;
+                            step = patSize;
+                        }
+                        if (nextstep)
+                        {
+                            previndex = startpos + step;
+                            break;
+                        }
+                    }
+                }
+                if (find) break;
+            }
+            if (!find)
+            {
+                MessageBox.Show("Can't find pattern!", "Oops", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+            }
+        }

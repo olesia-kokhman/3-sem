@@ -1,0 +1,4 @@
+C:\university\git\3-sem\Object-Oriented Programming\lab09\Main\Main\x64\Debug\Main.vcxproj.AssemblyReference.cache
+C:\university\git\3-sem\Object-Oriented Programming\lab09\Main\Main\x64\Debug\Main.vcxproj.SuggestedBindingRedirects.cache
+C:\university\git\3-sem\Object-Oriented Programming\lab09\Main\Main\x64\Debug\Main.MyForm.resources
+C:\university\git\3-sem\Object-Oriented Programming\lab09\Main\Main\x64\Debug\Main.vcxproj.GenerateResource.cache
