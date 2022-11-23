@@ -1,0 +1,8 @@
+D:\OlesiaProjects\3-sem\Object-Oriented Programming\kursova\kursova\kursova\x64\Debug\kursova.vcxproj.AssemblyReference.cache
+D:\OlesiaProjects\3-sem\Object-Oriented Programming\kursova\kursova\kursova\x64\Debug\kursova.vcxproj.SuggestedBindingRedirects.cache
+D:\OlesiaProjects\3-sem\Object-Oriented Programming\kursova\kursova\kursova\x64\Debug\kursova.MyForm.resources
+D:\OlesiaProjects\3-sem\Object-Oriented Programming\kursova\kursova\kursova\x64\Debug\kursova.vcxproj.GenerateResource.cache
+C:\university\git\3-sem\Object-Oriented Programming\kursova2\kursova\kursova\kursova\x64\Debug\kursova.vcxproj.AssemblyReference.cache
+C:\university\git\3-sem\Object-Oriented Programming\kursova2\kursova\kursova\kursova\x64\Debug\kursova.vcxproj.SuggestedBindingRedirects.cache
+C:\university\git\3-sem\Object-Oriented Programming\kursova2\kursova\kursova\kursova\x64\Debug\kursova.MyForm.resources
+C:\university\git\3-sem\Object-Oriented Programming\kursova2\kursova\kursova\kursova\x64\Debug\kursova.vcxproj.GenerateResource.cache

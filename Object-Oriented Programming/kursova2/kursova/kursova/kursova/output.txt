@@ -1,0 +1,3 @@
+BlackWood 50.000000
+WhiteWood 23.000000
+OrangeWood 41.500000

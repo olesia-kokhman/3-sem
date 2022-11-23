@@ -1,4 +1,17 @@
+﻿#include <iostream>
+#include <string>
 #include <iostream>
+#include <vector>
+#include <functional>
+#include <algorithm>
+#include <tuple>
+#include <stdexcept>
+#include <memory>
+#ifdef _WIN32
+#include <windows.h>
+#else
+#include <locale.h>
+#endif
 using namespace std;
 
 struct node {
@@ -10,11 +23,14 @@ struct node {
 };
 char vowels[] = { 'a', 'e', 'i', 'o', 'u' };
 class RedBlackTree {
-
+    char* array;
     node* root;
+    int i = 0;
 
 public:
-    RedBlackTree() : root(nullptr) {}
+    RedBlackTree() : root(nullptr) {
+        array = new char[1000];
+    }
 
     node* GetRoot() { return root; }
 
@@ -25,6 +41,7 @@ public:
             root->parent = nullptr;
             root->color = "BLACK";
             cout << "Element inserted.\n";
+            array[i] = root->data;
         }
         else {
             auto linker = GetRoot();
@@ -37,7 +54,9 @@ public:
                         linker->left = newnode;
                         newnode->color = "RED";
                         newnode->parent = linker;
-                        cout << "Element inserted.\n"; break;
+                        cout << "Element inserted.\n";
+                        break;
+
                     }
                     else { linker = linker->left; }
                 }
@@ -179,8 +198,49 @@ public:
         result = findVowel(temp->right);
         if (result) { return result; }
     }
-};
 
+};
+void printTree(RedBlackTree& tree) {
+    auto temp = tree.GetRoot();
+    int count = 1;
+    if (temp == nullptr) { return; }
+    while (temp) {
+        if (temp->data) {
+            cout << temp->data << " - r" << endl;
+            if (temp->left) {
+                cout << temp->left->data << " - l" << endl;
+            }
+            if (temp->right) {
+                cout << temp->right->data << " - r" << endl;
+            }
+        }
+        temp = temp->left;
+    }
+}
+#define LN { std::cout << __LINE__ << std::endl; }
+#define DEB(x) { std::cout << #x << "=(" << (x) << ") "; }
+static std::string ch_hor = "-", ch_ver = "|", ch_ddia = "/", ch_rddia = "\\", ch_udia = "\\", ch_ver_hor = "|-", ch_udia_hor = "\\-", ch_ddia_hor = "/-", ch_ver_spa = "| ";
+//static std::string ch_hor = "\u2500" /*─*/, ch_ver = "\u2502" /*│*/, ch_ddia = "\u250C" /*┌*/, ch_rddia = "\u2510" /*┐*/, ch_udia = "\u2514" /*└*/, ch_ver_hor = "\u251C\u2500" /*├─*/, ch_udia_hor = "\u2514\u2500" /*└─*/, ch_ddia_hor = "\u250C\u2500" /*┌─*/, ch_ver_spa = "\u2502 " /*│ */;
+void dump3(node* root, int space = 0) {
+    if (!root)
+        return;
+    enum { COUNT = 2 };
+    space += COUNT;
+    dump3(root->right, space);
+    for (int i = COUNT; i < space; ++i)
+        std::cout << "  ";
+    std::cout << root->data << std::endl;
+    dump3(root->left, space);
+}
+
+void dump0( node const* node1, std::string const& prefix = "", bool root = true, bool last = true) {
+    std::cout << prefix << (root ? "" : (last ? ch_udia_hor : ch_ver_hor)) << (node1 ? std::to_string(node1->data) : "") << std::endl;
+    if (!node1 || (!node1->left && !node1->right))
+        return;
+    std::vector<node*> v{ node1->left, node1->right };
+    for (size_t i = 0; i < v.size(); ++i)
+        dump0(v[i], prefix + (root ? "" : (last ? "  " : ch_ver_spa)), false, i + 1 >= v.size());
+}
 void menu() {
     cout << "\n__________________________________________";
     cout << "\n\n  *****Working with Red-Black-Tree******";
@@ -199,7 +259,7 @@ int main() {
     char input;
     menu();
     cin >> option;
-    while (option != 3) {
+    while (option != 4) {
         switch (option) {
         case 1: {
             cout << "\nElement to be inserted -- ";
@@ -232,6 +292,9 @@ int main() {
             }
             else { cout << "\nElement was not found"; }
             break;
+        }
+        case 3: {
+           dump0(demo.GetRoot());
         }
 
         default: cout << "Wrong Choice.\n";

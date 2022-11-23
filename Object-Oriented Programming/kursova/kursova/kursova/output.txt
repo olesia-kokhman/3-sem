@@ -1,0 +1,9 @@
+BlackWood 50.000000
+WhiteWood 23.000000
+OrangeWood 41.500000
+RedWood 30.500000
+GreenWood 30.600000
+PinkWood 30.700000
+YellowWood 30.400000
+GreyWood 30.000000
+BlueWood 20.500000
